@@ -340,7 +340,6 @@ body {
 .content.has-text-justified p {
   margin-bottom: 1.5rem;
 }
-
 /* Footer Improvements */
 .footer {
   background: var(--background-secondary);
@@ -750,4 +749,103 @@ a:focus {
 }
 
 
+/* Custom list with small arrows */
+.styled-list {
+  list-style-type: none; /* Remove default bullets */
+  padding-left: 20px; /* Add some padding to the left */
+}
 
+.styled-list li {
+  position: relative;
+  padding-left: 20px; /* Add space for the custom arrow */
+  margin-bottom: 10px;
+}
+
+/* Add small arrows before each list item */
+.styled-list li::before {
+  content: "→"; /* Small arrow symbol */
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.2rem; /* Adjust the size of the arrow */
+}
+
+/* Custom color for highlighted text */
+.highlight-text-green {
+  color: #066006; /* Change the color of the highlighted text */
+}
+
+.highlight-text-red {
+  color: #7f0000; /* Change the color of the highlighted text */
+}
+
+.highlight-text-purple {
+  color: #4d0a7f; /* Change the color of the highlighted text */
+}
+
+.orange-text {
+  color: #b45309; /* Change the color of the orange text */
+}
+
+.blue-text {
+  color: #1e40af; /* Change the color of the blue text */
+}
+
+.subsubtitle {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.figure-caption { 
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Styling for the image container */
+.image-container {
+  display: flex;            /* Use Flexbox to arrange images side by side */
+  justify-content: space-between; /* Space between the images */
+  margin-top: 20px;
+}
+
+.image-method {
+  width: 80%;             
+  height: auto;
+  text-align: center;  
+}
+
+.image-method img {
+  display: block;          /* 使图片成为块级元素 */
+  margin: 0 auto;          /* 自动左右边距，居中图片 */
+  width: 100%;             /* 让图片宽度自适应容器 */
+  height: auto;            /* 保持图片比例 */
+}
+
+
+.image-sim1 {
+  width: 55%;              /* Ensure each image takes up nearly half of the container */
+  height: auto;
+  text-align: center;      /* Center the images */
+}
+
+.image-sim2 {
+  width: 38%;              /* Ensure each image takes up nearly half of the container */
+  height: auto;
+  text-align: center;      /* Center the images */
+}
+
+li {
+  font-size: 1.25rem;  /* 设置字体大小 */
+}
+
+.image-exp1 {
+  width: 45%;              /* Ensure each image takes up nearly half of the container */
+  height: auto;
+  text-align: center;      /* Center the images */
+}
+
+.image-exp2 {
+  width: 45%;              /* Ensure each image takes up nearly half of the container */
+  height: auto;
+  text-align: center;      /* Center the images */
+}

@@ -177,6 +177,11 @@
     ]
   }
   </script>
+
+  <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+
 </head>
 <body>
 
@@ -186,53 +191,6 @@
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
 
   <main id="main-content">
   <section class="hero">
@@ -245,29 +203,31 @@
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Wen Li,</a>
+                Wen Li,<sup>1</sup>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Jinya Su,</a><sup>*</sup></span>
+                  <a href="https://scholar.google.com/citations?user=tTfMHMoAAAAJ&hl=en" target="_blank">Jinya Su,</a><sup>1*</sup></span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Zhenxing Sun,</a>
+                    Zhenxing Sun,<sup>2</sup>
                     <span class="author-block">
-                      <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Shihua Li,</a>
+                      <a href="https://scholar.google.com/citations?user=Gg2jy5MAAAAJ&hl=en&oi=ao" target="_blank">Shihua Li,</a><sup>1</sup>
                       <span class="author-block">
-                        <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Yunda Yan</a>
+                        <a href="https://scholar.google.com/citations?user=s9IOtoMAAAAJ&hl=en&oi=ao" target="_blank">Yunda Yan</a><sup>3</sup><sup>*</sup>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
                     <!-- TODO: Replace with your institution and conference/journal info -->
-                    <!-- <span class="author-block">School of Automation, Key Laboratory of Measurement and Control of CSE, Ministry of Education, and Institute of Intelligent Unmanned Systems, Southeast University, Nanjing 210096, China. <br>Conference name and year</span> -->
+                    <span class="author-block"><sup>1</sup> Southeast University, Nanjing, China</span>
+                    <span class="author-block"><sup>2</sup> Nanjing Tech University, Nanjing, China</span>
+                    <span class="author-block"><sup>3</sup> University College London, London, England</span>
                     <!-- TODO: Remove this line if no equal contribution -->
                     <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Author</small></span>
                   </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
+                  <!-- <div class="column has-text-centered">
+                    <div class="publication-links"> -->
                          <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
+                      <!-- <span class="link-block">
                         <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
@@ -275,10 +235,10 @@
                         </span>
                         <span>Paper</span>
                       </a>
-                    </span>
+                    </span> -->
 
                     <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
+                    <!-- <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -286,10 +246,10 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
+                  <!-- <span class="link-block">
                     <a href="https://github.com/YOUR REPO HERE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -297,17 +257,17 @@
                     </span>
                     <span>Code</span>
                   </a>
-                </span>
+                </span> -->
 
                 <!-- TODO: Update with your arXiv paper ID -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
                   <span>arXiv</span>
-                </a>
+                </a> -->
               </span>
             </div>
           </div>
@@ -325,12 +285,12 @@
       <!-- TODO: Replace with your teaser video -->
       <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
         <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
+        <source src="static/videos/SRS-DMPC.mp4" type="video/mp4">
       </video>
       <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
+      <!-- <h2 class="subtitle has-text-centered">
         Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
+      </h2> -->
     </div>
   </div>
 </section>
@@ -340,12 +300,32 @@
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <div class="column is-five-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Unmanned aerial vehicles are increasingly required to operate in constrained and wind-disturbed environments, where collision risks demand precise and robust pose control. For underactuated quadrotors, this is particularly challenging due to limited control authority and coupled dynamics, and existing methods often degrade or even fail under sudden or unpredictable disturbances. To address this challenge, we propose a structured risk-sensitive disturbance-compensation model predictive control (SRS-DMPC) framework. Unlike conventional disturbance-compensation MPC (DMPC) or uniform RS-DMPC, SRS-DMPC allocates heterogeneous risk attitudes across dynamic channels, enabling the controller to prioritize safety-critical states and reallocate control authority under uncertainties. High-fidelity Gazebo simulations show that SRS-DMPC reduces position tracking error over baseline DMPC and RS-DMPC and remains stable under severe wind disturbances where both baselines fail. Real-world flight experiments further demonstrate that SRS-DMPC achieves the lowest tracking error, with a 13% and 26.6% RMSE reduction over RS-DMPC and DMPC, while ensuring safe operation under external unknown wind where both baselines fail. These results highlight SRS-DMPC as a robust and practically deployable control strategy for quadrotors in safety-critical and uncertain environments.
+            Unmanned aerial vehicles are increasingly required
+            to operate in constrained and wind-disturbed environments,
+            where safety assurance demands precise and robust pose control.
+            To address this challenge, we propose a <strong>structured risk-sensitive
+            disturbance-compensation model predictive control (SRS-DMPC)
+            framework</strong>. Unlike conventional disturbance-compensation MPC
+            (DMPC) or uniform risk-sensitive DMPC (RS-DMPC), SRS-DMPC <strong>allocates heterogeneous 
+            risk attitudes across dynamic channels</strong>, enabling the controller to dynamically 
+            prioritise safety-critical states and reallocate control authority under 
+            uncertainties. Meanwhile, an Adaptive Kalman Filter (AKF) is employed to 
+            quantify and propagate uncertainty in real time.
+            High-fidelity Gazebo simulations show that SRS-DMPC reduces position 
+            tracking error over baseline DMPC and RS-DMPC, and more importantly, 
+            remains stable under severe wind disturbances where both baselines fail. 
+            Real-world flight experiments further demonstrate that SRS-DMPC achieves the
+            highest tracking accuracy, with a <strong>13.0% and 26.6% RMSE
+            reduction</strong> over RS-DMPC and DMPC, while ensuring safe
+            operation under the external unknown wind where both baselines fail. 
+            <strong>These results highlight SRS-DMPC as a robust and
+            practically deployable control strategy for quadrotors in uncertain
+             and safety-critical environments</strong>.
           </p>
         </div>
       </div>
@@ -355,58 +335,25 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section> -->
-<!-- End image carousel -->
-
 <!-- Image section -->
 <section class="hero is-small">
   <div class="hero-body">
-    <div class="container">
+    <div class="container is-max-desktop">
       <!-- Single image -->
       <div class="item">
-        <!-- Replace with your research result image -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
+        <!-- Title above the image -->
+        <h2 class="title has-text-centered">
+          Proposed method
         </h2>
+        
+        <!-- Replace with your research result image -->
+        <img src="static/images/control framework.png" 
+            alt="Control framework." loading="lazy"/>
+        
+        <!-- Optionally, you can add a description below the image -->
+        <!-- <h2 class="subtitle has-text-centered">
+          First image description.
+        </h2> -->
       </div>
     </div>
   </div>
@@ -416,85 +363,263 @@
 
 
 
+<!-- Text section -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="text-container">
+        <!-- Title with h3 and left alignment -->
+        <h3 class="subsubtitle has-text-left">
+          Uncertainty Quantification and Rejection
+        </h3>
+        
+        <!-- List with custom styling -->
+        <ul class="styled-list">
+          <li>Incorporate <strong class="highlight-text-purple">disturbance compensation</strong> 
+            into the prediction model and address the underactuated nature of quadrotors 
+            by <strong class="highlight-text-red">assigning heterogeneous risk 
+              sensitivities across different state channels.</strong></li>
+            <!-- Structured risk-sensitive cost:
+            <p>\[
+                \begin{aligned}
+                  J_{\text{srs}} &= \sum_{i=0}^{n-1}(\frac{1}{\gamma_i}\log\det(1+\gamma_iQ_i\sigma_{i})+\|\bar{{x}}_i-{x}_{r_i}\|^2_{({Q_i}^{-1}+\gamma_i\sigma_{i})^{-1}}) \\
+                  &=\sum_{i=0}^{n-1}\frac{1}{\gamma_i}\log\det(1+\gamma_iQ_i\sigma_{i})+\|\bar{\mathbf{x}}-\mathbf{x}_r\|^2_{(\mathbf{Q}^{-1}+\mathbf{\Gamma}\mathbf{\Sigma})^{-1}},
+                \end{aligned}
+            \]</p> -->
+          <li>Employ an Adaptive Kalman Filter to <strong class="highlight-text-green">dynamically 
+            propagate uncertainty and adjust risk allocation online.</strong> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End text section -->
+
+<!-- Section with title and two images on the sides -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <!-- Big Title -->
+      <h2 class="title has-text-centered">
+        SITL Simulation
+      </h2>
+
+      <h2 class="subsubtitle has-text-left">
+        Simulation setup
+      </h2>
+
+      <!-- Flexbox container for two images -->
+      <div class="image-container">
+        <!-- Left image -->
+        <div class="image-sim1">
+          <img src="static/images/sim_model.jpg" alt="Left Image Description" loading="lazy"/>
+        </div>
+
+        <!-- Right image -->
+        <div class="image-sim2">
+          <img src="static/images/lemniscate.jpg" alt="Right Image Description" loading="lazy"/>
+        </div>
+      </div>
+
+      <!-- Subtitle for image description -->
+      <h2 class="figure-caption has-text-centered">
+        <strong>Left:</strong> Designed trajectory of Simulation 1 in Gazebo. Sudden wind disturbances 
+        are applied at positions A and B to assess algorithm robustness. <strong>Right:</strong> 
+        Lemniscate trajectory and external force disturbance setup of Simulation 2. 
+        Upper: Lateral force case, the <strong class="orange-text">orange</strong> segments denote 
+        the trajectory portions where lateral forces are applied. Lower: Vertical force case, 
+        the <strong class="blue-text">blue</strong> segments denote the trajectory portions where 
+        vertical forces are applied.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End section -->
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="subsubtitle has-text-left">
+        Results of Simulation 1: Wind-severe case
+      </h2>
+      <!-- TODO: Replace with your teaser video -->
+      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
+        <!-- TODO: Add your video file path here -->
+        <source src="static/videos/sim1.mp4" type="video/mp4">
+      </video>
+      <!-- TODO: Replace with your video description -->
+      <!-- <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2> -->
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="subsubtitle has-text-left">
+        Results of Simulation 2
+      </h2>
+      <!-- TODO: Replace with your teaser video -->
+      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
+        <!-- TODO: Add your video file path here -->
+        <source src="static/videos/sim2.mp4" type="video/mp4">
+      </video>
+      <!-- TODO: Replace with your video description -->
+      <!-- <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2> -->
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Section with title and two images on the sides -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <!-- Big Title -->
+      <h2 class="title has-text-centered">
+        Real-world Experiment
+      </h2>
+
+      <h2 class="subsubtitle has-text-left">
+        Real-world setup
+      </h2>
+
+      <!-- Flexbox container for two images -->
+      <div class="image-container">
+        <!-- Left image -->
+        <div class="image-sim1">
+          <img src="static/images/quadrotor.jpg" alt="Left Image Description" loading="lazy"/>
+        </div>
+
+        <!-- Right image -->
+        <div class="image-sim2">
+          <img src="static/images/real_worl_setup.jpg" alt="Right Image Description" loading="lazy"/>
+        </div>
+      </div>
+
+      <!-- Subtitle for image description -->
+      <h2 class="figure-caption has-text-centered">
+        Real-world quadrotor experimental platform.
+      </h2>
+
+      <img src="static/images/real_world_cases.jpg" 
+            alt="Real-world cases." loading="lazy"/>
+
+      <h2 class="figure-caption has-text-centered">
+        Real-world experiment setup. <strong>Left:</strong> ND case, Natural disturbances (ND) from unknown thrust mapping 
+        and airflow effects within the confined space, without external disturbances. <strong>Right</strong>: In addition 
+        to ND, wind disturbances (WD) were introduced using a fan at one corner of the arena, producing a 
+        mean wind speed of 5.3 m/s.  
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End section -->
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="subsubtitle has-text-left">
+        Results of Real-world Experiment: ND case
+      </h2>
+      <!-- TODO: Replace with your teaser video -->
+      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
+        <!-- TODO: Add your video file path here -->
+        <source src="static/videos/real_world_ND.mp4" type="video/mp4">
+      </video>
+      <!-- TODO: Replace with your video description -->
+      <!-- <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2> -->
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="subsubtitle has-text-left">
+        Results of Real-world Experiment: WD case
+      </h2>
+      <!-- TODO: Replace with your teaser video -->
+      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
+        <!-- TODO: Add your video file path here -->
+        <source src="static/videos/real_world_WD.mp4" type="video/mp4">
+      </video>
+      <!-- TODO: Replace with your video description -->
+      <!-- <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2> -->
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Section with title and two images on the sides -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="subsubtitle has-text-left">
+        Trajectories in real-world experiments
+      </h2>
+
+      <!-- Flexbox container for two images -->
+      <div class="image-container">
+        <!-- Left image -->
+        <div class="image-exp1">
+          <img src="static/images/exp_traj.jpg" alt="Left Image Description" loading="lazy"/>
+        </div>
+
+        <!-- Right image -->
+        <div class="image-exp2">
+          <img src="static/images/exp_traj_wind.jpg" alt="Right Image Description" loading="lazy"/>
+        </div>
+      </div>
+
+      <!-- Subtitle for image description -->
+      <h2 class="figure-caption has-text-centered">
+        <strong>Left:</strong> ND case; <strong>Right:</strong> WD case.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End section -->
+
+
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
-    <div class="container">
+    <div class="container"> -->
       <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+      <!-- <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
-          <div class="publication-video">
+          <div class="publication-video"> -->
             <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End youtube video -->
 
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
-
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
+  <!-- <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <div class="bibtex-header">
         <h2 class="title">BibTeX</h2>
@@ -511,7 +636,7 @@
   url={https://your-domain.com/your-project-page}
 }</code></pre>
     </div>
-</section>
+</section> -->
 <!--End BibTex citation -->
 
 
@@ -523,8 +648,7 @@
 
           <p>
             This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+            </a>
           </p>
 
         </div>
